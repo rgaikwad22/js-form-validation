@@ -1,0 +1,148 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Validation</title>
+
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <meta name="description" lang="en" content="">
+
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <meta name="keywords" lang="en" content="">
+
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+        so how much the device is able to fit on the screen is what's shown initially. 
+        Remove comments from this tag, when you want to apply media queries to the website. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- To adhear no-cache for Chrome -->
+  <!-- <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-store, no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+  <!--container starts here-->
+  <div class="container">
+    <!--main starts here-->
+    <main>
+      <div class="wrapper">
+        <h1>Form Validation</h1>
+        <form action="#FIXME" class="validation-form">
+          <div class="form-container">
+            <div class="input-grp inputs">
+              <label for="firstName">First Name*:</label>
+              <input type="text" id="firstName" class="first-name" name="firstName">
+            </div>
+            <div class="input-grp inputs">
+              <label for="middleName">Middle Name*:</label>
+              <input type="text" id="middleName" class="middle-name" name="middleName">
+            </div>
+            <div class="input-grp inputs">
+              <label for="lastName">Last Name*:</label>
+              <input type="text" id="lastName" class="last-name" name="lastName">
+            </div>
+            <div class="input-grp inputs">
+              <label for="email">Email Address*:</label>
+              <input type="email" id="email" class="email" name="email">
+            </div>
+            <div class="input-grp inputs">
+              <label for="pass">Password*:</label>
+              <input type="password" id="pass" class="pass" name="password">
+            </div>
+            <div class="input-grp inputs">
+              <label for="confirmPass">Confirm Password*:</label>
+              <input type="password" id="confirmPass" class="confirm-pass" name="confirmPass">
+            </div>
+            <div class="address">
+              <h2>Address</h2>
+              <ul class="address-info">
+                <li>
+                  <div class="input-grp">
+                    <label for="city">City*:</label>
+                    <input type="text" id="city" class="city" name="city">
+                  </div>
+                </li>
+                <li>
+                  <div class="input-grp">
+                    <label for="state">State*:</label>
+                    <input type="text" id="state" class="state" name="state">
+                  </div>
+                </li>
+                <li>
+                  <div class="input-grp">
+                    <label for="country">Country*:</label>
+                    <input type="text" id="country" class="country" name="country">
+                  </div>
+                </li>
+                <li>
+                  <div class="input-grp">
+                    <label for="zipcode">Zipcode*:</label>
+                    <input type="number" id="zipcode" class="zipcode" name="zipcode">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-info input-grp">
+              <label for="contact">Contact*:</label>
+              <input type="number" id="contact" class="contact" name="contact">
+            </div>
+            <label>Gender*:</label>
+            <div class="radio-inputs">
+              <div class="radio input-grp">
+                <input type="radio" id="male" class="gender" value="male" name="gender">
+                <label for="male">Male</label>
+              </div>
+              <div class="radio input-grp">
+                <input type="radio" id="female" class="gender" value="female" name="gender">
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="comment-txt">
+              <label for="comment">Comment:</label>
+              <textarea id="comment" cols="30" rows="3" name="comment" class="comment"></textarea>
+            </div>
+          </div>
+          <div class="submit-btn">
+            <input type="submit" class="submit" value="Submit">
+          </div>
+        </form>
+
+        <div class="table-container">
+          <div class="wrapper">
+            <ul class="table">
+              <li class="table-row">
+                <ul class="table-col table-head">
+                  <li>Name</li>
+                  <li>Email</li>
+                  <li>Contact</li>
+                  <li>Gender</li>
+                  <li>Edit</li>
+                  <li>Delete</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--main ends here-->
+  </div>
+  <!--container ends here-->
+  <script src="assets/vendor/jquery-1.8.3.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
